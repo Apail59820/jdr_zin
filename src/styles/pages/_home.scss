@@ -1,0 +1,80 @@
+@use "../base/base";
+@use "../abstracts/colors";
+@use "../abstracts/assets";
+@use "../components/statusBars";
+@use "../components/staticStats";
+
+body {
+  background: colors.$bg-gradient;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: assets.$bg-paper;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    z-index: -1;
+  }
+}
+
+.character-sheet-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: max-content;
+  align-items: center;
+  margin-top: 50px;
+
+  .character-preview-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 500px;
+
+    .character-name {
+      font-family: "Cinzel";
+      font-size: 1.5em;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .character-sheet {
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+
+  .character-stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+
+    .character-dynamic-stats {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
+      margin: 1em 0;
+      width: 100%;
+    }
+
+    .character-static-stats {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        column-gap: 1.25em;
+        height: 350px;
+    }
+  }
+}
