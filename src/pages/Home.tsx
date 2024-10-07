@@ -1,6 +1,10 @@
-import "../styles/_test.scss"
+import "../styles/_test.scss";
 const HomePage = () => {
-  return <div className={'testClass'}>Hello i am home page</div>;
+  return (
+    <div className="body">
+      <div className={"testClass"}>Hello i am home page</div>
+    </div>
+  );
 };
 
 export default HomePage;
