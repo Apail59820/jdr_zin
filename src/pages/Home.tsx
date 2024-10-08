@@ -16,9 +16,9 @@ const HomePage = () => {
         </div>
         <div className="character-stats-wrapper">
           <div className="character-dynamic-stats">
-            <div className="status-bar health"></div>
-            <div className="status-bar mana"></div>
-            <div className="status-bar energy"></div>
+            <div className="status-bar health-bar"><div className="health"></div></div>
+            <div className="status-bar mana-bar"><div className="mana"></div></div>
+            <div className="status-bar energy-bar"><div className="energy"></div></div>
           </div>
           <div className="character-static-stats">
             {statTypesStr.map((stat) => (
