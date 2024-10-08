@@ -10,6 +10,8 @@ export type StatTypes =
   | "charisma"
   | "marksman";
 
+export type StatusTypes = "health" | "mana" | "energy";
+
 export const statTypesStr: StatTypes[] = [
   "strength",
   "constitution",

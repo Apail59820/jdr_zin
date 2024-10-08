@@ -1,6 +1,7 @@
 import "../styles/pages/_home.scss";
 import { statTypesStr } from "../models/StatTypes";
 import StatSlot from "../components/StatSlot/StatSlot";
+import StatusBar from "../components/StatusBar/StatusBar";
 
 const HomePage = () => {
   return (
@@ -16,9 +17,9 @@ const HomePage = () => {
         </div>
         <div className="character-stats-wrapper">
           <div className="character-dynamic-stats">
-            <div className="status-bar health-bar"><div className="health"></div></div>
-            <div className="status-bar mana-bar"><div className="mana"></div></div>
-            <div className="status-bar energy-bar"><div className="energy"></div></div>
+            <StatusBar status={"health"} />
+            <StatusBar status={"mana"} />
+            <StatusBar status={"energy"} />
           </div>
           <div className="character-static-stats">
             {statTypesStr.map((stat) => (
