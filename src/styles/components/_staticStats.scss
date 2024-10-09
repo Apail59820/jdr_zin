@@ -1,5 +1,9 @@
+@use "../abstracts/assets";
+
 .static-stat {
-    background-color: rgba($color: #eedd94, $alpha: 1);
+    background-image: assets.$sheet-bg;
+    background-size: cover;
+    background-position: center;
     width: 35%;
     margin: 1em 0;
     padding: 0.3em 0em;

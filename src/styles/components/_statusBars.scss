@@ -2,50 +2,61 @@
 
 
 .status-bar {
-  width: 65%;
+  position: relative;
+  text-align: center;
+  width: calc(65% - 5px);
   height: 15px;
-  border-radius: 2px;
   box-shadow: inset 0px 0px 5px #16161d;
+
+  .status-wrapper {
+    width: 100%;
+    height: 100%;
+
+    .values {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin-top: -0.4em;
+      font-style: italic;
+    }
+
+    .health {
+      width: calc(100% * (var(--curr-health) / var(--max-health)));
+      max-width: 100%;
+      height: 100%;
+      background-color: colors.$health;
+      background: colors.$health-gradient;
+    }
+  
+    .mana {
+      width: calc(100% * (var(--curr-mana) / var(--max-mana)));
+      max-width: 100%;
+      height: 100%;
+      background-color: colors.$mana;
+      background: colors.$mana-gradient;
+    }
+  
+    .energy {
+      width: calc(100% * (var(--curr-energy) / var(--max-energy)));
+      max-width: 100%;
+      height: 100%;
+      background-color: colors.$energy;
+      background: colors.$energy-gradient;
+    }
+  }
 
   &.health-bar {
     border: 1px solid colors.$health;
     background-color: colors.$health-bg;
-    box-shadow: 0px 0px 3px colors.$health;
   }
 
   &.mana-bar {
     border: 1px solid colors.$mana;
     background-color: colors.$mana-bg;
-    box-shadow: 0px 0px 3px colors.$mana;
   }
 
   &.energy-bar {
     border: 1px solid colors.$energy;
     background-color: colors.$energy-bg;
-    box-shadow: 0px 0px 3px colors.$energy;
-  }
-
-  .health {
-    width: calc(100% * (var(--curr-health) / var(--max-health)));
-    max-width: 100%;
-    height: 100%;
-    background-color: colors.$health;
-    background: colors.$health-gradient;
-  }
-
-  .mana {
-    width: calc(100% * (var(--curr-mana) / var(--max-mana)));
-    max-width: 100%;
-    height: 100%;
-    background-color: colors.$mana;
-    background: colors.$mana-gradient;
-  }
-
-  .energy {
-    width: calc(100% * (var(--curr-energy) / var(--max-energy)));
-    max-width: 100%;
-    height: 100%;
-    background-color: colors.$energy;
-    background: colors.$energy-gradient;
   }
 }
