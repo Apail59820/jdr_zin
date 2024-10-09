@@ -12,15 +12,18 @@ const StatusBar = ({ status }: Props) => {
 
   return (
     <div className={`status-bar ${status}-bar`}>
-      <div
-        className={status}
-        style={
-          {
-            [`--curr-${status}`]: values.current,
-            [`--max-${status}`]: values.max,
-          } as React.CSSProperties
-        }
-      ></div>
+      <div className="status-wrapper">
+        <div className="values">{values.current} / {values.max}</div>
+        <div
+          className={status}
+          style={
+            {
+              [`--curr-${status}`]: values.current,
+              [`--max-${status}`]: values.max,
+            } as React.CSSProperties
+          }
+        ></div>
+      </div>
     </div>
   );
 };
