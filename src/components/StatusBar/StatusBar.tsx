@@ -6,7 +6,7 @@ type Props = {
 };
 const StatusBar = ({ status }: Props) => {
   const [values, setValues] = useState<{ current: number; max: number }>({
-    current: 75,
+    current: 20,
     max: 100,
   });
 

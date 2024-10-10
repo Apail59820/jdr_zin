@@ -1,17 +1,17 @@
 $bg: #16161d;
 $bg-equip: #36365c;
 
-$health: rgb(228, 51, 89);
-$mana: rgba(18,162,212,1);
-$energy: rgb(205, 167, 0);
+$health: #e43359;
+$mana: #12a2d4;
+$energy: #cda700;
 
-$health-bg: rgb(102, 17, 17);
-$mana-bg: rgb(24, 40, 97);
-$energy-bg: rgb(92, 64, 0);
+$health-bg: #661111;
+$mana-bg: #182861;
+$energy-bg: #5c4000;
 
-$health-gradient: linear-gradient(90deg, rgba(186,0,0,1) 0%, rgba(212,18,84,1) 100%);
-$mana-gradient: linear-gradient(90deg, rgba(52,90,224,1) 0%, rgba(18,162,212,1) 100%);
-$energy-gradient: linear-gradient(90deg, rgba(205,144,0,1) 0%, rgba(224,207,52,1) 100%);
+$health-gradient: linear-gradient(90deg, #ba0000 0%, #d41254 100%);
+$mana-gradient: linear-gradient(90deg, #345ae0 0%, #12a2d4 100%);
+$energy-gradient: linear-gradient(90deg, #cd9000 0%, #e0cf34 100%);
 
 $light-shadow: rgba(0,0,0,0.10);
 $medium-shadow: rgba(0,0,0,0.33);
