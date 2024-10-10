@@ -39,6 +39,12 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <div className="radial-menu active">
+        <div className="radial-menu-toggle"></div>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </div>
     </div>
   );
 };
