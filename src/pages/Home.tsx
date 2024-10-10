@@ -2,6 +2,7 @@ import "../styles/pages/_home.scss";
 import { statTypesStr } from "../models/StatTypes";
 import StatSlot from "../components/StatSlot/StatSlot";
 import StatusBar from "../components/StatusBar/StatusBar";
+import RadiaMenu from "../components/RadialMenu/RadiaMenu";
 
 const HomePage = () => {
   return (
@@ -39,12 +40,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="radial-menu active">
-        <div className="radial-menu-toggle"></div>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </div>
+      <RadiaMenu/>
     </div>
   );
 };
