@@ -1,4 +1,5 @@
 @use "../abstracts/colors";
+@use "../abstracts/assets";
 
 
 .status-bar {
@@ -27,7 +28,9 @@
       max-width: 100%;
       height: 100%;
       background-color: colors.$health;
-      background: colors.$health-gradient;
+      background-image: assets.$health-bar;
+      background-size: 300px 15px;
+      background-position: right;
     }
   
     .mana {
@@ -35,7 +38,9 @@
       max-width: 100%;
       height: 100%;
       background-color: colors.$mana;
-      background: colors.$mana-gradient;
+      background-image: assets.$mana-bar;
+      background-size: 300px 15px;
+      background-position: right;
     }
   
     .energy {
@@ -43,7 +48,9 @@
       max-width: 100%;
       height: 100%;
       background-color: colors.$energy;
-      background: colors.$energy-gradient;
+      background-image: assets.$energy-bar;
+      background-size: 300px 15px;
+      background-position: right;
     }
   }
 
