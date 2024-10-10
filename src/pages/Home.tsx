@@ -8,12 +8,23 @@ const HomePage = () => {
     <div className="body">
       <div className="character-sheet-wrapper">
         <div className="character-preview-wrapper">
-          <div className="character-name">Renard</div>
           <div className="character-info-switch">
             <button>Equipement</button>
             <button>Prothèses</button>
           </div>
-          <div className="character-sheet"></div>
+          <div className="character-sheet">
+            <div className="head"></div>
+            <div className="chest"></div>
+            <div className="legs"></div>
+            <div className="boots"></div>
+            <div className="hand1"></div>
+            <div className="hand2"></div>
+            <div className="character-name">
+              <p>Renard</p>
+              <p>Vagabond</p>
+            </div>
+            <div className="infos"></div>
+          </div>
         </div>
         <div className="character-stats-wrapper">
           <div className="character-dynamic-stats">
