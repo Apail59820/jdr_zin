@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const RadiaMenu = () => {
+const RadialMenu = () => {
   const [currentState, setCurrentState] = useState<boolean>(false);
 
   return (
     <div className={`radial-menu ${currentState && "active"}`}>
       <div className="radial-menu-toggle" onClick={() => setCurrentState(!currentState)}/>
       <li>
-        <a href="#"></a>
+        <a href="/inventory"></a>
       </li>
       <li>
         <a href="#"></a>
@@ -19,4 +19,4 @@ const RadiaMenu = () => {
   );
 };
 
-export default RadiaMenu;
+export default RadialMenu;
