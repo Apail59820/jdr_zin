@@ -1,71 +1,71 @@
 .full-inv-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #ff0000, $alpha: 0.1);
+
+  .item-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45%;
+    width: 80%;
+    background-color: rgba($color: #ff0000, $alpha: 0.1);
+
+    .current-item {
+      width: 45%;
+      height: 100%;
+      background-color: rgba($color: #ff0000, $alpha: 0.1);
+    }
+
+    .selected-item {
+      width: 45%;
+      height: 100%;
+      background-color: rgba($color: #ff0000, $alpha: 0.1);
+    }
+  }
+
+  .inv-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba($color: #FF0000, $alpha: 0.1);
+    width: 80%;
+    height: 45%;
+    margin-top: 25px;
+    background-color: rgba($color: #ff0000, $alpha: 0.1);
 
-    .item-preview {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 45%;
-        width: 80%;
-        background-color: rgba($color: #FF0000, $alpha: 0.1);
+    .categories {
+      display: flex;
+      flex-direction: row;
 
-        .current-item {
-            width: 45%;
-            height: 100%;
-            background-color: rgba($color: #FF0000, $alpha: 0.1);
-        }
+      > * {
+        background-color: rgba($color: #ff0000, $alpha: 0.1);
+        padding: 0.5em;
+      }
 
-        .selected-item {
-            width: 45%;
-            height: 100%;
-            background-color: rgba($color: #FF0000, $alpha: 0.1);
-        }
+      > *:not(:first-child) {
+        margin-left: 5px;
+      }
     }
 
-    .inv-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: 45%;
-        margin-top: 25px;
-        background-color: rgba($color: #FF0000, $alpha: 0.1);
+    .inventory {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 7px;
+      width: 100%;
+      height: max-content;
+      padding-top: 7px;
+      background-color: rgba($color: #ff0000, $alpha: 0.1);
+      overflow-y: scroll;
 
-        .categories {
-            display: flex;
-            flex-direction: row;
-
-            >* {
-                background-color: rgba($color: #FF0000, $alpha: 0.1);
-                padding: 0.5em;
-            }
-
-            >*:not(:first-child) {
-                margin-left: 5px;
-            }
-        }
-
-        .inventory {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 7px;
-            width: 100%;
-            height: max-content;
-            padding-top: 7px;
-            background-color: rgba($color: #FF0000, $alpha: 0.1);
-            overflow-y: scroll;
-
-            >* {
-                width: 50px;
-                height: 50px;
-                background-color: rgba($color: #FF0000, $alpha: 0.1);
-            }
-        }
+      > * {
+        width: 50px;
+        height: 50px;
+        background-color: rgba($color: #ff0000, $alpha: 0.1);
+      }
     }
+  }
 }
