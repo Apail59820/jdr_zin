@@ -1,12 +1,45 @@
 @use "../abstracts/assets";
 
-.static-stat {
-    background-image: assets.$sheet-bg;
-    background-size: cover;
-    background-position: center;
-    width: 35%;
-    margin: 1em 0;
-    padding: 0.3em 0em;
-    text-align: center;
-    border-radius: 2px;
-}
+.character-stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    padding-bottom: 80px;
+
+    .character-dynamic-stats {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
+      margin: 1em 0;
+      width: 100%;
+    }
+
+    .character-static-stats {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      column-gap: 1.25em;
+      height: 350px;
+
+      .static-stat {
+        display: flex;
+        align-items: center;
+        background-image: assets.$sheet-bg;
+        background-size: cover;
+        background-position: center;
+        width: calc(35%);
+        height: 32px;
+        margin: 1em 0;
+        padding: 0.3em 0em;
+        text-align: center;
+        border-radius: 2px;
+        font-family: 'Cinzel';
+        font-size: 12px;
+        text-align: left;
+        padding-left: 5px;
+        }
+    }
+  }
