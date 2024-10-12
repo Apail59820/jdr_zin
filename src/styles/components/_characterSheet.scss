@@ -49,7 +49,7 @@
 
     .character-sheet {
       width: 100%;
-      aspect-ratio: 1080/1920;
+      aspect-ratio: 9/16;
       background-image: assets.$sheet-bg;
       background-size: cover;
 
@@ -148,6 +148,7 @@
     flex-direction: column;
     width: 100%;
     height: max-content;
+    padding-bottom: 80px;
 
     .character-dynamic-stats {
       display: flex;

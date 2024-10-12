@@ -6,12 +6,16 @@ const InventoryPage = () => {
     <div className="body">
       <div className="full-inv-wrapper">
         <div className="item-preview">
-          <div className="current-item"></div>
-          <div className="selected-item"></div>
+          <div className="current-item">
+            <p className="item-title">Équipé</p>
+          </div>
+          <div className="selected-item">
+            <p className="item-title">Sélectionné</p>
+          </div>
         </div>
         <div className="inv-wrapper">
           <div className="categories">
-            <div>Equipement</div>
+            <div>Équipement</div>
             <div>Ressources</div>
             <div>Quêtes</div>
           </div>
