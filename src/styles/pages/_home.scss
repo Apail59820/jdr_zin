@@ -1,13 +1,10 @@
 @use "../base/resets";
 @use "../base/fonts";
+@use "../base/global";
 @use "../abstracts/colors";
 @use "../abstracts/assets";
 @use "../components/statusBars";
 @use "../components/staticStats";
 @use "../components/characterSheet";
 @use "../components/radialMenu";
-
-body {
-  background-color: colors.$bg;
-}
 

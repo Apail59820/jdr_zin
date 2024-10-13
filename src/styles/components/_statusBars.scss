@@ -1,13 +1,13 @@
 @use "../abstracts/colors";
 @use "../abstracts/assets";
-
+@use "../abstracts/mixins";
 
 .status-bar {
   position: relative;
   text-align: center;
   width: calc(65% - 5px);
   height: 15px;
-  box-shadow: inset 0px 0px 5px #16161d;
+  box-shadow: inset 0px 0px 5px #16161d, 0px 2px 5px 0px colors.$medium-shadow;
 
   .status-wrapper {
     width: 100%;
