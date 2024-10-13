@@ -4,7 +4,7 @@ const RadialMenu = () => {
   const [currentState, setCurrentState] = useState<boolean>(false);
 
   return (
-    <div className={`radial-menu ${currentState && "active"}`}>
+    <div className={`radial-menu radial-${currentState && "active"}`}>
       <div className="radial-menu-toggle" onClick={() => setCurrentState(!currentState)}/>
       <li>
         <a href="/inventory"></a>
