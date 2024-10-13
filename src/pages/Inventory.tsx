@@ -15,9 +15,9 @@ const InventoryPage = () => {
         </div>
         <div className="inv-wrapper">
           <div className="categories">
-            <div>Équipement</div>
-            <div>Ressources</div>
-            <div>Quêtes</div>
+            <button>Équipement</button>
+            <button>Ressources</button>
+            <button>Quêtes</button>
           </div>
           <div className="inventory">
             <div className="inv-slot"></div>
