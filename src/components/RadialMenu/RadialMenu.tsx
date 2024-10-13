@@ -10,7 +10,7 @@ const RadialMenu = () => {
         <a href="/inventory"></a>
       </li>
       <li>
-        <a href="#"></a>
+        <a href="/"></a>
       </li>
       <li>
         <a href="#"></a>

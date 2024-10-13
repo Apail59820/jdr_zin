@@ -1,4 +1,6 @@
 @use "../abstracts/assets";
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
 
 .character-stats-wrapper {
   display: flex;
@@ -29,8 +31,8 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      background-image: assets.$sheet-bg;
-      background-size: cover;
+      background-image: assets.$static-stat-bg;
+      background-size: 100% 100%;
       background-position: center;
       width: calc(35%);
       height: 32px;
@@ -38,6 +40,7 @@
       font-family: "Cinzel";
       font-size: 13px;
       font-weight: 500;
+      @include mixins.defaultFilterShadow;
 
       .static-stat-name {
         width: max-content;
