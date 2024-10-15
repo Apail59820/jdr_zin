@@ -27,6 +27,7 @@
       background-size: 100%;
       text-align: center;
       @include mixins.defaultFilterShadow;
+      font-size: 0.85em;
     }
 
     .selected-item {
@@ -37,6 +38,7 @@
       background-size: 100%;
       text-align: center;
       @include mixins.defaultFilterShadow;
+      font-size: 0.85em;
     }
   }
 
@@ -69,8 +71,8 @@
       @include mixins.defaultShadow;
 
       > * {
-        width: 55px;
-        height: 55px;
+        width: calc(20% - 7px);
+        aspect-ratio: 1/1;
         @include mixins.slot;
       }
     }
@@ -79,6 +81,5 @@
 
 .item-title {
   font-family: "Cinzel";
-  font-size: 14px;
   margin-top: -3px;
 }

@@ -4,6 +4,7 @@
 @mixin slot {
   position: relative;
   background-image: assets.$slot-default;
+  // width: 100%;
   background-size: 100% 100%;
   transition: all 0.2s ease-out;
 

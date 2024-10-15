@@ -1,3 +1,4 @@
+import "../styles/base/_global.scss";
 import "../styles/pages/_inventory.scss";
 import RadialMenu from "../components/RadialMenu/RadialMenu";
 

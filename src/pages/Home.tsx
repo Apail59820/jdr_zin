@@ -1,3 +1,4 @@
+import "../styles/base/_global.scss";
 import "../styles/pages/_home.scss";
 import { statTypesStr } from "../models/StatTypes";
 import StatSlot from "../components/StatSlot/StatSlot";

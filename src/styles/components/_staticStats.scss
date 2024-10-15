@@ -38,11 +38,11 @@
       height: 32px;
       margin: 1em 0;
       font-family: "Cinzel";
-      font-size: 13px;
       font-weight: 500;
       @include mixins.defaultFilterShadow;
 
       .static-stat-name {
+        font-size: 0.75em;
         width: max-content;
         margin-left: 10px;
       }
@@ -50,7 +50,6 @@
       .static-stat-value {
         width: max-content;
         margin-right: 10px;
-        font-size: 15px;
       }
     }
   }
