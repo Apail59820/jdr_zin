@@ -22,12 +22,12 @@
 
     .character-sheet {
       width: 100%;
-      aspect-ratio: 9/16;
+      height: max-content;
       background-image: assets.$sheet-bg;
-      background-size: cover;
+      background-size: 100% 100%;
 
       display: grid;
-      grid-template-columns: 65px 1fr 65px;
+      grid-template-columns: 25% 1fr 25%;
       grid-template-rows: repeat(6, 1fr);
       grid-column-gap: 10px;
       grid-row-gap: 10px;
@@ -61,13 +61,17 @@
       .hand1,
       .hand2 {
         @include mixins.slot;
+        aspect-ratio: 1/1;
+      }
+
+      .hand1, .hand2 {
+        aspect-ratio: 1/2;
       }
 
       .character-name {
         grid-area: 1 / 1 / 2 / 2;
         p {
           font-family: "Cinzel";
-          font-size: 1.5em;
           font-weight: 600;
           text-transform: uppercase;
           text-align: center;
@@ -76,7 +80,6 @@
 
           &:last-of-type {
             font-family: "Afacad Flux";
-            font-size: 1em;
             font-weight: 400;
             font-style: italic;
             color: rgba($color: #ffffff, $alpha: 0.4);

@@ -29,7 +29,7 @@
       height: 100%;
       background-color: colors.$health;
       background-image: assets.$health-bar;
-      background-size: 300px 15px;
+      background-size: max(300px, 100%) 15px;
       background-position: right;
     }
   
@@ -39,7 +39,7 @@
       height: 100%;
       background-color: colors.$mana;
       background-image: assets.$mana-bar;
-      background-size: 300px 15px;
+      background-size: max(300px, 100%) 15px;
       background-position: right;
     }
   
@@ -49,7 +49,7 @@
       height: 100%;
       background-color: colors.$energy;
       background-image: assets.$energy-bar;
-      background-size: 300px 15px;
+      background-size: max(300px, 100%) 15px;
       background-position: right;
     }
   }
