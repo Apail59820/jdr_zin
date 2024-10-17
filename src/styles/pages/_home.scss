@@ -3,8 +3,8 @@
 @use "../base/global";
 @use "../abstracts/colors";
 @use "../abstracts/assets";
+@use "../abstracts/mixins";
 @use "../components/statusBars";
 @use "../components/staticStats";
 @use "../components/characterSheet";
 @use "../components/radialMenu";
-

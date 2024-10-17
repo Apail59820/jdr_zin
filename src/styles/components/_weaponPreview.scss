@@ -1,0 +1,98 @@
+@use "../abstracts/colors";
+@use "../abstracts/assets";
+@use "../abstracts/mixins";
+
+.selected-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Afacad Flux";
+
+  * {
+    // background-color: rgba(255, 255, 0, 0.2);
+    width: max-content;
+  }
+
+  &.weapon {
+    .weapon-info {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      align-self: center;
+
+      .weapon-name {
+        margin-top: 10px;
+        align-self: center;
+        font-family: "Cinzel";
+        font-size: 1.3rem;
+        text-transform: uppercase;
+      }
+
+      .weapon-description {
+        align-self: center;
+        margin-top: -7px;
+        margin-left: -5px;
+        font-style: italic;
+        color: colors.$subtext;
+      }
+
+      .weapon-ammo,
+      .weapon-attributes {
+        text-align: left;
+        margin-top: 5px;
+      }
+
+      .weapon-ammo {
+        p {
+          font-weight: 500;
+          font-size: 1rem;
+          margin-bottom: -5px;
+        }
+        .ammo-type {
+          text-indent: 1rem;
+        }
+        .ammo-count {
+          text-indent: 1rem;
+        }
+      }
+
+      .weapon-attributes {
+        .weapon-bonus {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+
+          p {
+            width: 100%;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: -5px;
+          }
+
+          .bonus-type {
+            text-indent: 1rem;
+          }
+        }
+
+        .weapon-malus {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+
+          p {
+            width: 100%;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: -5px;
+          }
+
+          .malus-type {
+            text-indent: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

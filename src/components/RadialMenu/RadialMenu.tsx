@@ -13,7 +13,7 @@ const RadialMenu = () => {
         <a href="/"></a>
       </li>
       <li>
-        <a href="#"></a>
+        <a href="/debug"></a>
       </li>
     </div>
   );

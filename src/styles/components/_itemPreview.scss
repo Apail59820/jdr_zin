@@ -1,0 +1,28 @@
+@use "../abstracts/colors";
+@use "../abstracts/assets";
+@use "../abstracts/mixins";
+
+.item-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+  margin-top: 80px;
+
+  .current-item {
+    @include mixins.itemPreview;
+    @include mixins.defaultFilterShadow;
+  }
+
+  .selected-item {
+    @include mixins.itemPreview;
+    @include mixins.defaultFilterShadow;
+  }
+}
+
+.item-title {
+  font-family: "Cinzel";
+  margin-top: -3px;
+  align-self: center;
+}
