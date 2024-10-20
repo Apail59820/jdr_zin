@@ -6,6 +6,8 @@ import StatusBar from "../components/StatusBar/StatusBar";
 import RadialMenu from "../components/RadialMenu/RadialMenu";
 
 const HomePage = () => {
+
+
   return (
     <div className="body">
       <div className="character-sheet-wrapper">
