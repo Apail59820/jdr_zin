@@ -4,9 +4,12 @@ import { statTypesStr } from "../models/StatTypes";
 import StatSlot from "../components/StatSlot/StatSlot";
 import StatusBar from "../components/StatusBar/StatusBar";
 import RadialMenu from "../components/RadialMenu/RadialMenu";
+import {useSelector} from "react-redux";
+import {RootState} from "../store/store";
 
 const HomePage = () => {
 
+  const user = useSelector((state: RootState) => state.user.user);
 
   return (
     <div className="body">
@@ -24,8 +27,8 @@ const HomePage = () => {
             <div className="hand1"></div>
             <div className="hand2"></div>
             <div className="character-name">
-              <p>Renard</p>
-              <p>Vagabond</p>
+              <p>{user?.name}</p>
+              <p>{user?.class}</p>
             </div>
             <div className="infos"></div>
           </div>
